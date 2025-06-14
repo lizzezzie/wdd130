@@ -1,9 +1,9 @@
 
 :root {
-    --primary-color: #00B4D8 /* Rapid Teal */;
-    --secondary-color:  #1B263B /* River Navy */;
-    --accent1-color: #F4A261 /* Rock Clay */;
-    --accent2-color: #F8F9FA /* Mist White */;
+    --primary-color: #00B4D8; /* Rapid Teal */
+    --secondary-color:  #1B263B; /* River Navy */
+    --accent1-color: #F4A261; /* Rock Clay */
+    --accent2-color: #F8F9FA; /* Mist White */
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -139,12 +139,12 @@ footer {
     margin: 24px 0;
 }
 
-/*  Adventuters Section  */
-.adventurers h2 {
+/*  Adventures Section  */
+.adventures h2 {
     margin-bottom: 16px;
 }
 
-.adventurers-gallery {
+.adventures-gallery {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
@@ -152,7 +152,7 @@ footer {
     padding: 0 16px; 
 }
 
-.adventurers-gallery figure {
+.adventures-gallery figure {
   text-align: center;
   flex: 1 1 18%;
 }
@@ -163,17 +163,57 @@ footer {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.adventurers-gallery figcaption {
+.adventures-gallery figcaption {
   margin-top: 8px;
   font-size: 0.9rem;
   color: var(--secondary-color);
 }
 
-/*  Contact Section  */
-.contact-info, .employees, .contact-form {
+/*  Contact Form  */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: var(--accent2-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+/*  General Contact Info  */
+.contact-info, .employees, .map {
   margin: 2rem auto;
   max-width: 800px;
   padding: 1rem;
+  background-color: var(--accent2-color);
+  border-radius: 10px;
 }
 
 .employees figure {
@@ -182,15 +222,169 @@ footer {
   text-align: center;
 }
 
-.contact-form form {
+.employees img {
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  width: 150px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/*  About Section  */
+.about {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/*  Newsletter  */
+.newsletter {
+  background-color: var(--accent1-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.newsletter h2 {
+  margin-bottom: 1rem;
+  color: var(--accent2-color);
+}
+
+.newsletter form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
-.contact-form label,
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  margin: 0.5rem 0;
+.newsletter input,
+.newsletter button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
+.newsletter button {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*  Trips Page  */
+
+.trip {
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.trip-cta {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+.trip-cta .button {
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.trip-cta .button:hover {
+  background-color: var(--accent1-color);
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*  Wireframe  */
+.wireframe {
+  margin-top: 1rem;
+}
+.wireframe a {
+  color: var(--accent2-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.wireframe a:hover {
+  color: var(--accent1-color);
+}
+
+/*  Index-Home page  */
+.features-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.features-grid div {
+  text-align: center;
+}
+
+.features-grid img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.button {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--accent1-color);
+}
