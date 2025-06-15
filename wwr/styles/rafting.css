@@ -219,6 +219,25 @@ footer a:hover {
   background-color: var(--accent1-color);
 }
 
+.subscribe-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;  
+  margin-top: 1rem;
+}
+
+.subscribe-box input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.subscribe-box label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* Contact Info */
 .contact-info, .employees, .map {
   margin: 2rem auto;
