@@ -328,6 +328,14 @@ footer a:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.trip-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1000px;
+}
 
 .trip img {
   width: 100%;
@@ -365,22 +373,33 @@ footer a:hover {
 }
 
 .trip-table {
-  width: 100%;
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 2rem auto;
 }
 
-.trip-table th, .trip-table td {
+.trip-table h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.trip-table table {
+  width: 90%;
+  max-width: 700px;
+  border-collapse: collapse;
+}
+.trip-table th,
+.trip-table td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
 }
-
 .trip-table th {
   background-color: var(--primary-color);
   color: var(--accent2-color);
 }
-
 .trip-table tr:nth-child(even) {
   background-color: #e0e0e0;
 }
