@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--secondary-color);
 }
-
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
@@ -79,7 +78,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--accent2-color);
 }
 
@@ -110,15 +109,15 @@ footer a:hover {
 
 .hero h1 {
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   padding: 16px 24px;
   text-align: center;
   opacity: 0.85;
   border-radius: 10px;
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
+  background-color: rgba(27, 38, 59, 0.85);
+  color: var(--accent2-color); 
 }
 
 .hero article {
@@ -131,7 +130,7 @@ footer a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: #112;
 }
 
 .hero article img {
@@ -287,11 +286,11 @@ footer a:hover {
 
 .newsletter h2 {
   margin-bottom: 1rem;
-  color: var(--accent2-color); 
+  color: var(--secondary-color); 
 }
 
 .newsletter p {
-  color: var(--accent2-color);
+  color: var(--secondary-color);
 }
 .newsletter input {
   background-color: white;
@@ -354,7 +353,7 @@ footer a:hover {
 }
 
 .trip-cta p {
-  color: var(--accent2-color);
+  color: var(--secondary-color);
 }
 
 .trip-cta .button {
@@ -463,6 +462,7 @@ footer a:hover {
 
 .button:hover {
   background-color: var(--accent1-color);
+  color: var(--secondary-color);
 }
 
 /* Accessibility and Responsiveness */
